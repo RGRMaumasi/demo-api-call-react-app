@@ -1,0 +1,40 @@
+
+.category-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+
+
+    .category-item {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        gap: 30px;
+        width: 40%;
+        
+        &:nth-child(2n) {
+            margin-left: 10%;
+        }
+
+
+        img {
+            width: 100%;
+        }
+
+        .description {
+            p {
+                font-size: 0.8rem;
+                font-weight: 400;
+                text-align: left;
+            }
+            strong {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+
+        }
+    }
+
+}
